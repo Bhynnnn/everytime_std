@@ -54,21 +54,39 @@ final class MainCell: UITableViewCell {
         return stackView
     }()
     
+    private let reactionView = ReactionView()
     
+    private let separator: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor(w:200)
+        return view
+    }()
     
-
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
         self.backgroundColor = .white
+        
         self.contentView.addSubview(self.nicknameContainer)
         self.contentView.addSubview(self.titleLabel)
+        self.contentView.addSubview(self.reactionView)
+        self.contentView.addSubview(self.separator)
+        
+        
         self.nicknameContainer.addArrangedSubview(self.profileImageView)
         self.nicknameContainer.addArrangedSubview(self.nicknameLabel)
         self.nicknameContainer.addArrangedSubview(self.timeLabel)
+
+        
         self.nicknameContainer.translatesAutoresizingMaskIntoConstraints = false
         self.profileImageView.translatesAutoresizingMaskIntoConstraints = false
         self.titleLabel.translatesAutoresizingMaskIntoConstraints = false
+        self.reactionView.translatesAutoresizingMaskIntoConstraints = false
+        self.separator.translatesAutoresizingMaskIntoConstraints = false
+        
+        
         NSLayoutConstraint.activate([
+            
             self.nicknameContainer.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 15),
             self.nicknameContainer.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 24),
             self.nicknameContainer.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -24),
@@ -81,6 +99,15 @@ final class MainCell: UITableViewCell {
             self.titleLabel.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 24),
             self.titleLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -24),
             self.titleLabel.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -24),
+            
+            self.reactionView.heightAnchor.constraint(equalToConstant: 16),
+            self.reactionView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -30),
+            self.reactionView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: -6),
+            
+            self.separator.heightAnchor.constraint(equalToConstant: 1),
+            self.separator.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 8),
+            self.separator.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: -8),
+            self.separator.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor)
         ])
 
     }
@@ -89,5 +116,10 @@ final class MainCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func setupData(name: String, time: String, data: String){
+        self.titleLabel.text = data
+        self.nicknameLabel.text = name
+        self.timeLabel.text = time
+    }
     
 }

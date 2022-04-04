@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07118F7927FAF3690003164F /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07118F7827FAF3690003164F /* NavigationTitleView.swift */; };
 		0715AD0327F2BF1C00D21AA2 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715AD0227F2BF1C00D21AA2 /* InsetTextField.swift */; };
 		0715AD0527F43C7B00D21AA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715AD0427F43C7B00D21AA2 /* MainViewController.swift */; };
 		074ABEF527F4591A00F5B452 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074ABEF427F4591A00F5B452 /* MainCell.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07118F7827FAF3690003164F /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
 		0715AD0227F2BF1C00D21AA2 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		0715AD0427F43C7B00D21AA2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		074ABEF427F4591A00F5B452 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				0715AD0427F43C7B00D21AA2 /* MainViewController.swift */,
 				074ABEF427F4591A00F5B452 /* MainCell.swift */,
 				074ABEF627F4646F00F5B452 /* ReactionView.swift */,
+				07118F7827FAF3690003164F /* NavigationTitleView.swift */,
 			);
 			path = everytime_std;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				07E372FC27EC9AC800E6B1CC /* AppDelegate.swift in Sources */,
 				07E372FE27EC9AC800E6B1CC /* SceneDelegate.swift in Sources */,
 				07E3731227EC9AFA00E6B1CC /* UIColor+Extension.swift in Sources */,
+				07118F7927FAF3690003164F /* NavigationTitleView.swift in Sources */,
 				074ABEF527F4591A00F5B452 /* MainCell.swift in Sources */,
 				0715AD0327F2BF1C00D21AA2 /* InsetTextField.swift in Sources */,
 			);

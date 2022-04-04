@@ -18,7 +18,7 @@ final class ReactionView: UIStackView{
         button.setImage(UIImage(named: "main_like_icon"), for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
         button.contentHorizontalAlignment = .fill
-        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -3, bottom: 0, right: 0)
+//        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -3, bottom: 0, right: 0)
         return button
     }()
     
@@ -31,15 +31,20 @@ final class ReactionView: UIStackView{
         button.imageView?.contentMode = .scaleAspectFit
         button.contentHorizontalAlignment = .fill
         button.contentVerticalAlignment = .fill
-        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -3, bottom: 0, right: 0)
+//        button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -3, bottom: 0, right: 0)
         return button
     }()
     
+    //생성자 override
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.spacing = 6
         self.axis = .horizontal
         self.addArrangedSubview(self.likeButton)
         self.addArrangedSubview(self.commentButton)
+    }
+    
+    required init(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
