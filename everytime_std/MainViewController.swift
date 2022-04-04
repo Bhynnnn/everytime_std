@@ -52,4 +52,9 @@ final class MainViewController: UITableViewController {
         cell.setupData(name: name_txt, time: time_txt, data: data_txt)
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailviewController = DetailViewController()
+        self.navigationController?.pushViewController(detailviewController, animated: true)
+    }
 }

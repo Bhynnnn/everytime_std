@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		07118F7927FAF3690003164F /* NavigationTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07118F7827FAF3690003164F /* NavigationTitleView.swift */; };
+		07118F7B27FB02D50003164F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07118F7A27FB02D50003164F /* DetailViewController.swift */; };
+		07118F7D27FB05760003164F /* DetailReplyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07118F7C27FB05760003164F /* DetailReplyCell.swift */; };
+		07118F7F27FB14110003164F /* ReplyReactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07118F7E27FB14110003164F /* ReplyReactionView.swift */; };
 		0715AD0327F2BF1C00D21AA2 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715AD0227F2BF1C00D21AA2 /* InsetTextField.swift */; };
 		0715AD0527F43C7B00D21AA2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0715AD0427F43C7B00D21AA2 /* MainViewController.swift */; };
 		074ABEF527F4591A00F5B452 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074ABEF427F4591A00F5B452 /* MainCell.swift */; };
@@ -24,6 +27,9 @@
 
 /* Begin PBXFileReference section */
 		07118F7827FAF3690003164F /* NavigationTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTitleView.swift; sourceTree = "<group>"; };
+		07118F7A27FB02D50003164F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		07118F7C27FB05760003164F /* DetailReplyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailReplyCell.swift; sourceTree = "<group>"; };
+		07118F7E27FB14110003164F /* ReplyReactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyReactionView.swift; sourceTree = "<group>"; };
 		0715AD0227F2BF1C00D21AA2 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
 		0715AD0427F43C7B00D21AA2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		074ABEF427F4591A00F5B452 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
@@ -84,6 +90,9 @@
 				074ABEF427F4591A00F5B452 /* MainCell.swift */,
 				074ABEF627F4646F00F5B452 /* ReactionView.swift */,
 				07118F7827FAF3690003164F /* NavigationTitleView.swift */,
+				07118F7A27FB02D50003164F /* DetailViewController.swift */,
+				07118F7C27FB05760003164F /* DetailReplyCell.swift */,
+				07118F7E27FB14110003164F /* ReplyReactionView.swift */,
 			);
 			path = everytime_std;
 			sourceTree = "<group>";
@@ -159,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07118F7B27FB02D50003164F /* DetailViewController.swift in Sources */,
 				0715AD0527F43C7B00D21AA2 /* MainViewController.swift in Sources */,
+				07118F7F27FB14110003164F /* ReplyReactionView.swift in Sources */,
 				074ABEF727F4646F00F5B452 /* ReactionView.swift in Sources */,
 				07E3731027EC9ADF00E6B1CC /* LoginViewController.swift in Sources */,
 				07E3730027EC9AC800E6B1CC /* ViewController.swift in Sources */,
@@ -169,6 +180,7 @@
 				07118F7927FAF3690003164F /* NavigationTitleView.swift in Sources */,
 				074ABEF527F4591A00F5B452 /* MainCell.swift in Sources */,
 				0715AD0327F2BF1C00D21AA2 /* InsetTextField.swift in Sources */,
+				07118F7D27FB05760003164F /* DetailReplyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
